@@ -1,0 +1,26 @@
+$name-color: #FFF;
+$sidebar-font-color: #ababab;
+$sidebar-hover-color: #493F4A;
+$dark-color: #2F292A;
+
+header {
+  nav {
+    color: $name-color;
+    padding: 10px;
+    background-color: $sidebar-font-color;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+
+    .flex-item {
+      padding: 10px;
+      background-color: $sidebar-hover-color;
+      border: 1px solid $dark-color;
+      flex-grow: 1;
+
+      &:nth-child(2) {
+        flex-grow: 2;
+      }
+    }
+  }
+}
